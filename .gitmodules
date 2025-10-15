@@ -1,0 +1,3 @@
+[submodule "Packages/com.flu3d.arksharp"]
+	path = Packages/com.flu3d.arksharp
+	url = https://github.com/flu3d/ArkSharp.git
