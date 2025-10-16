@@ -1,0 +1,155 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 185f6993d5150494d98da50e26cb1c25, type: 3}
+  m_Name: AssetBundleCollectorSetting
+  m_EditorClassIdentifier: 
+  ShowPackageView: 1
+  ShowEditorAlias: 1
+  UniqueBundleName: 0
+  Packages:
+  - PackageName: DefaultPackage
+    PackageDesc: 
+    EnableAddressable: 1
+    SupportExtensionless: 1
+    LocationToLower: 0
+    IncludeAssetGUID: 0
+    AutoCollectShaders: 1
+    IgnoreRuleName: NormalIgnoreRule
+    Groups:
+    - GroupName: Model
+      GroupDesc: 
+      AssetTags: 
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Assets/Content/Model
+        CollectorGUID: aa85a3274a62e24418bbae6844f2afde
+        CollectorType: 0
+        AddressRuleName: AddressByFileNameExtension
+        PackRuleName: PackTopDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+    - GroupName: FX
+      GroupDesc: 
+      AssetTags: 
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Assets/Content/Effect/Prefab
+        CollectorGUID: 54fd7ebe01882f4449ea689545c57414
+        CollectorType: 0
+        AddressRuleName: AddressByFileNameExtension
+        PackRuleName: PackTopDirectory
+        FilterRuleName: CollectPrefab
+        AssetTags: 
+        UserData: 
+    - GroupName: Scene
+      GroupDesc: 
+      AssetTags: 
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Assets/Content/Scenes
+        CollectorGUID: b5f8f98ec9e93a54bbfaf0cd2e452782
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackSeparately
+        FilterRuleName: CollectScene
+        AssetTags: 
+        UserData: 
+      - CollectPath: Assets/Content/ScenesRes
+        CollectorGUID: dab768ce966cedc46ba0ebea61deeef0
+        CollectorType: 0
+        AddressRuleName: AddressByFileNameExtension
+        PackRuleName: PackTopDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+    - GroupName: Table
+      GroupDesc: 
+      AssetTags: 
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Assets/Build/Table
+        CollectorGUID: f96a35bb266d2cf4dbf6021ccf9f845f
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackCollector
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: bytes
+      - CollectPath: Assets/Build/HotFixDll
+        CollectorGUID: 0aac4c74848412447acde47a49350cd7
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackTopDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: bytes
+    - GroupName: Boot
+      GroupDesc: 
+      AssetTags: 
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Assets/Content/StartRes
+        CollectorGUID: 3dc85a2d97e4ec847bf3eabc434c5a02
+        CollectorType: 1
+        AddressRuleName: AddressByFileNameExtension
+        PackRuleName: PackGroup
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+      - CollectPath: Assets/Settings/AppSettings.asset
+        CollectorGUID: 4f482abbfc2657b488e0bc230298ea5a
+        CollectorType: 0
+        AddressRuleName: AddressByFileNameExtension
+        PackRuleName: PackGroup
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: asset
+    - GroupName: UI
+      GroupDesc: 
+      AssetTags: 
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Assets/Content/UI
+        CollectorGUID: 1134edd2077815e408ac04fc880a2dee
+        CollectorType: 0
+        AddressRuleName: AddressByFileNameExtension
+        PackRuleName: PackTopDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+    - GroupName: Blueprint
+      GroupDesc: 
+      AssetTags: 
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Assets/Content/Blueprints
+        CollectorGUID: 37e74b44c2dfd444cbf9e5fcf91b3172
+        CollectorType: 0
+        AddressRuleName: AddressByFileNameExtension
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+    - GroupName: Shader
+      GroupDesc: 
+      AssetTags: 
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Assets/Scripts/Framework/RendererFeature
+        CollectorGUID: a64fba163b0744e46b0d3b6e5d144060
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectCustom
+        AssetTags: 
+        UserData: shader|compute
