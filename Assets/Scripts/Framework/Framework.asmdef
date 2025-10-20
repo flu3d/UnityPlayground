@@ -1,0 +1,20 @@
+{
+    "name": "Framework",
+    "rootNamespace": "Ludum.Framework",
+    "references": [
+        "UniTask",
+        "YooAsset",
+        "TriInspector",
+        "ParadoxNotion",
+        "NodeCanvas"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
