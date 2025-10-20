@@ -9,8 +9,8 @@
 ## 代码规范
 
 - 最高使用 C# 10 语言特性
-- 严格遵循 .editorconfig 配置
-- 代码文件采用 UTF-8 编码、LF 换行，TAB 缩进（宽度 4）
+- 严格遵循 [.editorconfig] 配置
+- 代码采用 UTF-8 编码、LF 换行，TAB 缩进（宽度 4）
 
 ## 命名规范
 
@@ -19,20 +19,20 @@
 - 公共属性和字段：PascalCase
 - 私有字段：_camelCase（下划线前缀）
 - 私有属性：camelCase
-- 接口：I 前缀（如 IService）
+- 接口：IService（I 前缀）
 
 ## 最佳实践
 
 - 优先使用项目现有框架和工具库
 - 异步编程：UniTask + async/await
 - 类型简写：使用 var 和 new()
-- 单例模式：Singleton.Get<T>()
+- 单例模式：``` Singleton.Get<T>() ```
 - 日志记录：Log.Info/Warn/Error
-- 禁止手动创建 .meta 文件
+- **禁止**创建 .meta 文件
 
 ## 单元测试
 
 - 框架：NUnit，使用经典模式 Assert 语法
 - 异步：``` public async Task TestMethod() {} ```
-- 命名：类名和文件名以 Test 开头
+- 命名：测试类名和文件名以 Test 开头
 - 原则：测试代码独立，不修改业务代码
